@@ -7,6 +7,7 @@ import { ContactList } from './ContactList';
 import { ContactForm } from './ContactForm';
 import { Loader } from './Loader';
 import { Filter } from './Filter';
+// import { Helmet } from 'react-helmet';
 
 export const App = () => {
   const dispatch = useDispatch();
