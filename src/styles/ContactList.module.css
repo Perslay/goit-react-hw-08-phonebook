@@ -1,0 +1,31 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 1rem;
+}
+
+.listItem {
+  border-bottom: 1px dotted var(--color-gray);
+  padding-bottom: 1rem;
+}
+
+.listItem:last-child {
+  border: none;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .list {
+    gap: 1rem;
+  }
+
+  .listItem {
+    padding-bottom: 1rem;
+  }
+}

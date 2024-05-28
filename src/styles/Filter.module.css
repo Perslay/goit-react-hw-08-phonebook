@@ -1,0 +1,30 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.input {
+  border: 2px solid var(--color-lightgray);
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5rem;
+  transition: box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 5px var(--color-accent);
+}
+
+@media screen and (min-width: 1024px) {
+  .filter {
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+}
