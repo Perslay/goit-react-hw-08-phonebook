@@ -27,13 +27,12 @@ export const store = configureStore({
     filter: filterReducer,
   },
   // middleware - what actions to ignore
-  middleware: getDefaultMiddleware => {
+  middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    });
-  },
+    }),
   devTools: process.env.NODE_ENV === 'development',
 });
 
