@@ -3,7 +3,7 @@ import { selectContacts } from '../redux/selectors/contacts';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../redux/operations/contacts';
 import { nanoid } from '@reduxjs/toolkit';
-import css from '../styles/ContactForm.module.css';
+import css from './ContactForm.module.css';
 
 export const ContactForm = () => {
   const nameInputId = nanoid();
