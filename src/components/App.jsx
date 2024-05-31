@@ -16,10 +16,10 @@ import { refreshUser } from '../redux/operations/auth';
 // import { Filter } from './Filter';
 // import { Helmet } from 'react-helmet';
 
-const Home = lazy(() => import('../pages/Home'));
-const Register = lazy(() => import('../pages/Register'));
-const Login = lazy(() => import('../pages/Login'));
-const Contacts = lazy(() => import('../pages/Contacts'));
+const Home = lazy(() => import('../pages/Home/Home'));
+const Register = lazy(() => import('../pages/Register/Register'));
+const Login = lazy(() => import('../pages/Login/Login'));
+const Contacts = lazy(() => import('../pages/Contacts/Contacts'));
 
 export const App = () => {
   const dispatch = useDispatch();

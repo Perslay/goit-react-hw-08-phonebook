@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 import { Loader } from './Loader/Loader';
 // import { selectIsLoading } from '../redux/selectors';
 import { Header } from './Header/Header';
+import { Footer } from './Footer/Footer';
 
 export const Layout = () => {
   // const isLoading = useSelector(selectIsLoading);
@@ -14,9 +15,7 @@ export const Layout = () => {
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
-      <footer>
-        <p>layout footer</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
