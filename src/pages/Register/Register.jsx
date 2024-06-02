@@ -18,6 +18,30 @@ const Register = () => {
     form.reset();
   };
 
+  // const dispatch = useDispatch();
+  // const [form, setForm] = useState({ name: '', email: '', password: '' });
+  // const { loading, error } = useSelector(state => state.auth);
+
+  // const handleChange = e => {
+  //   const { name, value } = e.target;
+  //   setForm(prevForm => ({ ...prevForm, [name]: value }));
+  // };
+
+  // const handleSubmit = event => {
+  //   event.preventDefault();
+  //   // const form = event.currentTarget;
+  //   // dispatch(
+  //   //   register({
+  //   //     name: form.elements.name.value,
+  //   //     email: form.elements.email.value,
+  //   //     password: form.elements.password.value,
+  //   //   })
+  //   // );
+  //   dispatch(register(form));
+  //   setForm({ name: '', email: '', password: '' });
+  //   // form.reset();
+  // };
+
   return (
     <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
       <div>
