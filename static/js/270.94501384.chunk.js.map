@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/270.94501384.chunk.js","mappings":"2KAAA,MAQA,EARiBA,KAEbC,EAAAA,EAAAA,KAAA,OAAAC,UACED,EAAAA,EAAAA,KAAA,KAAAC,SAAG,c","sources":["pages/Contacts.jsx"],"sourcesContent":["const Contacts = () => {\n  return (\n    <div>\n      <p>Contacts</p>\n    </div>\n  );\n};\n\nexport default Contacts;\n"],"names":["Contacts","_jsx","children"],"sourceRoot":""}
