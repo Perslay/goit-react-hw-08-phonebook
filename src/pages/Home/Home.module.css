@@ -1,7 +1,7 @@
 .container {
   background-color: var(--color-white);
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 5rem 1rem 2rem;
   width: 300px;
 }
 

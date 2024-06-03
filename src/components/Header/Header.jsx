@@ -10,8 +10,10 @@ export const Header = () => {
   return (
     <header className={css.header}>
       <h1 className={css.heading}>Phonebook</h1>
-      <Navigation />
-      {isLoggedIn ? <UserMenu /> : <AuthNav />}
+      <nav className={css.nav}>
+        <Navigation />
+        {isLoggedIn ? <UserMenu /> : <AuthNav />}
+      </nav>
     </header>
   );
 };

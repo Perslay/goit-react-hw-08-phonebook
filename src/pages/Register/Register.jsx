@@ -44,14 +44,16 @@ const Register = () => {
   // };
 
   return (
-    <div className={css.container}>
+    <main className={css.container}>
       <Helmet>
         <title>Register</title>
       </Helmet>
       <h2 className={css.heading}>Registration</h2>
       <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
         <div className={css.row}>
-          <label htmlFor="register-name">Username</label>
+          <label className={css.label} htmlFor="register-name">
+            Usernameeeeeeeeeeeeeeee
+          </label>
           <input
             className={css.input}
             type="text"
@@ -60,7 +62,9 @@ const Register = () => {
           />
         </div>
         <div className={css.row}>
-          <label htmlFor="register-email">Email</label>
+          <label className={css.label} htmlFor="register-email">
+            Email
+          </label>
           <input
             className={css.input}
             type="text"
@@ -69,7 +73,9 @@ const Register = () => {
           />
         </div>
         <div className={css.row}>
-          <label htmlFor="register-password">Password</label>
+          <label className={css.label} htmlFor="register-password">
+            Password
+          </label>
           <input
             className={css.input}
             type="text"
@@ -79,7 +85,7 @@ const Register = () => {
         </div>
         <button type="submit">Register</button>
       </form>
-    </div>
+    </main>
   );
 };
 

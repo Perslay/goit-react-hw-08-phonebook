@@ -11,7 +11,7 @@ const Contacts = () => {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   return (
-    <div>
+    <main>
       <Helmet>
         <title>Contacts</title>
       </Helmet>
@@ -23,7 +23,7 @@ const Contacts = () => {
         <Filter />
         <ContactList error={error} />
       </div>
-    </div>
+    </main>
   );
 };
 

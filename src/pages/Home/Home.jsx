@@ -3,7 +3,7 @@ import css from './Home.module.css';
 
 const Home = () => {
   return (
-    <div className={css.container}>
+    <main className={css.container}>
       <Helmet>
         <title>Home</title>
         <meta
@@ -21,7 +21,7 @@ const Home = () => {
         Start by creating or logging in to your own account and choose the
         'Contacts' option at the top of the page.
       </p>
-    </div>
+    </main>
   );
 };
 

@@ -1,4 +1,24 @@
 .footer {
-  background-color: gray;
+  background-color: var(--color-lightgray);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
   padding: 1rem;
+  width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 900px;
+  }
 }

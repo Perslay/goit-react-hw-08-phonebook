@@ -3,7 +3,7 @@ import css from './Login.module.css';
 
 const Login = () => {
   return (
-    <div>
+    <main>
       <Helmet>
         <title>Login</title>
       </Helmet>
@@ -18,7 +18,7 @@ const Login = () => {
         </div>
         <button type="submit">Log in</button>
       </form>
-    </div>
+    </main>
   );
 };
 
