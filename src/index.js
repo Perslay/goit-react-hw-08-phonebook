@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-// npm install react-router-dom
 import { BrowserRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { App } from 'components/App';
 import { store, persistor } from './redux/store';
 import './index.css';
@@ -14,7 +14,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/* loading - component or null that appears before data gets downloaded */}
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter basename="goit-react-hw-08-phonebook">
-          <App />
+          <HelmetProvider>
+            <App />
+          </HelmetProvider>
         </BrowserRouter>
       </PersistGate>
     </Provider>

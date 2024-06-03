@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { selectIsLoading, selectError } from '../../redux/selectors/index';
 import { Loader } from '../../components/Loader/Loader';
 import { ContactForm } from '../../components/ContactForm/ContactForm';
@@ -14,6 +14,14 @@ const Contacts = () => {
     <main>
       <Helmet>
         <title>Contacts</title>
+        <meta
+          name="description"
+          content="Welcome to the contacts page of the online phonebook. Save and manage names and phone numbers."
+        />
+        <meta
+          name="keywords"
+          content="contact, contacts, phonebook, phonenumber"
+        />
       </Helmet>
       {isLoading && !error && <Loader />}
       <div className={css.appContainer}>

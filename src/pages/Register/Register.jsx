@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { register } from '../../redux/operations/auth';
 import css from './Register.module.css';
 
@@ -47,6 +47,14 @@ const Register = () => {
     <main className={css.container}>
       <Helmet>
         <title>Register</title>
+        <meta
+          name="description"
+          content="Welcome to the registration page of the online phonebook. Sign up to create your own contact list."
+        />
+        <meta
+          name="keywords"
+          content="register, registration, signup, phonebook"
+        />
       </Helmet>
       <h2 className={css.heading}>Registration</h2>
       <form className={css.form} onSubmit={handleSubmit} autoComplete="off">

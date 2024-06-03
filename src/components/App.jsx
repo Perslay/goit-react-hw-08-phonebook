@@ -14,7 +14,6 @@ import { refreshUser } from '../redux/operations/auth';
 // import { ContactForm } from './ContactForm';
 // import { Loader } from './Loader';
 // import { Filter } from './Filter';
-// import { Helmet } from 'react-helmet';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Register = lazy(() => import('../pages/Register/Register'));

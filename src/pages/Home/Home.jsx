@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import css from './Home.module.css';
 
 const Home = () => {
@@ -8,9 +8,9 @@ const Home = () => {
         <title>Home</title>
         <meta
           name="description"
-          content="Online phonebook. Save phone numbers with names and manage them."
+          content="Welcome to the home page of the online phonebook. Log in and manage your own phonebook."
         />
-        <meta name="keywords" content="phonebook, phonenumber, contacts" />
+        <meta name="keywords" content="home, phonebook" />
       </Helmet>
       <h2 className={css.heading}>Home page</h2>
       <p>
