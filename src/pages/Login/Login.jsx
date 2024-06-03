@@ -1,8 +1,12 @@
+import { Helmet } from 'react-helmet';
 import css from './Login.module.css';
 
 const Login = () => {
   return (
     <div>
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <form className={css.form}>
         <div>
           <label htmlFor="login-email">Email</label>

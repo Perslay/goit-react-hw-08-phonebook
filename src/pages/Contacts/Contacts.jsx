@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet';
 import { selectIsLoading, selectError } from '../../redux/selectors/index';
 import { Loader } from '../../components/Loader/Loader';
 import { ContactForm } from '../../components/ContactForm/ContactForm';
@@ -11,6 +12,9 @@ const Contacts = () => {
   const error = useSelector(selectError);
   return (
     <div>
+      <Helmet>
+        <title>Contacts</title>
+      </Helmet>
       {isLoading && !error && <Loader />}
       <div className={css.appContainer}>
         <h1 className={css.firstHeading}>Phonebook</h1>

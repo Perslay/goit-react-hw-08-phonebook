@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+import { Helmet } from 'react-helmet';
 import { register } from '../../redux/operations/auth';
 import css from './Register.module.css';
 
@@ -43,21 +44,42 @@ const Register = () => {
   // };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-      <div>
-        <label htmlFor="register-name">Username</label>
-        <input type="text" name="name" id="register-name" />
-      </div>
-      <div>
-        <label htmlFor="register-email">Email</label>
-        <input type="text" name="email" id="register-email" />
-      </div>
-      <div>
-        <label htmlFor="register-password">Password</label>
-        <input type="text" name="password" id="register-password" />
-      </div>
-      <button type="submit">Register</button>
-    </form>
+    <div className={css.container}>
+      <Helmet>
+        <title>Register</title>
+      </Helmet>
+      <h2 className={css.heading}>Registration</h2>
+      <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
+        <div className={css.row}>
+          <label htmlFor="register-name">Username</label>
+          <input
+            className={css.input}
+            type="text"
+            name="name"
+            id="register-name"
+          />
+        </div>
+        <div className={css.row}>
+          <label htmlFor="register-email">Email</label>
+          <input
+            className={css.input}
+            type="text"
+            name="email"
+            id="register-email"
+          />
+        </div>
+        <div className={css.row}>
+          <label htmlFor="register-password">Password</label>
+          <input
+            className={css.input}
+            type="text"
+            name="password"
+            id="register-password"
+          />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
   );
 };
 

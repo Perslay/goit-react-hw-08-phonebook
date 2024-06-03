@@ -26,7 +26,6 @@ export const store = configureStore({
     contacts: contactsReducer,
     filter: filterReducer,
   },
-  // middleware - what actions to ignore
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {
