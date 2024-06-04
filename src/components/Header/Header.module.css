@@ -4,27 +4,38 @@
   width: 100%;
 }
 
-.nav {
+.div {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 1rem;
   width: 300px;
 }
 
 .heading {
-  display: none;
-  /* change for blind users to hear */
+  font-family: serif;
+  letter-spacing: 0.03em;
+  padding: 2rem 0 1rem;
+  position: relative;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .nav {
+  .div {
     display: flex;
     justify-content: space-between;
+    padding: 1rem 2rem;
     width: 600px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .nav {
+  .div {
+    padding: 1.5rem 3rem;
     width: 900px;
+  }
+
+  .heading {
+    font-size: 36px;
   }
 }

@@ -56,43 +56,47 @@ const Register = () => {
           content="register, registration, signup, phonebook"
         />
       </Helmet>
-      <h2 className={css.heading}>Registration</h2>
-      <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-        <div className={css.row}>
-          <label className={css.label} htmlFor="register-name">
-            Usernameeeeeeeeeeeeeeee
-          </label>
-          <input
-            className={css.input}
-            type="text"
-            name="name"
-            id="register-name"
-          />
-        </div>
-        <div className={css.row}>
-          <label className={css.label} htmlFor="register-email">
-            Email
-          </label>
-          <input
-            className={css.input}
-            type="text"
-            name="email"
-            id="register-email"
-          />
-        </div>
-        <div className={css.row}>
-          <label className={css.label} htmlFor="register-password">
-            Password
-          </label>
-          <input
-            className={css.input}
-            type="text"
-            name="password"
-            id="register-password"
-          />
-        </div>
-        <button type="submit">Register</button>
-      </form>
+      <div className={css.smallContainer}>
+        <h2 className={css.heading}>Registration</h2>
+        <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
+          <div className={css.row}>
+            <label className={css.label} htmlFor="register-name">
+              Username
+            </label>
+            <input
+              className={css.input}
+              type="text"
+              name="name"
+              id="register-name"
+            />
+          </div>
+          <div className={css.row}>
+            <label className={css.label} htmlFor="register-email">
+              Email
+            </label>
+            <input
+              className={css.input}
+              type="text"
+              name="email"
+              id="register-email"
+            />
+          </div>
+          <div className={css.row}>
+            <label className={css.label} htmlFor="register-password">
+              Password
+            </label>
+            <input
+              className={css.input}
+              type="text"
+              name="password"
+              id="register-password"
+            />
+          </div>
+          <button className={css.submit} type="submit">
+            Register
+          </button>
+        </form>
+      </div>
     </main>
   );
 };

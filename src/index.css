@@ -3,7 +3,7 @@
 :root {
   --color-white: #f8f8f8;
   --color-light: #ddd;
-  --color-lightgray: #999;
+  --color-lightgray: #bbb;
   --color-gray: #777;
   --color-darkgray: #555;
   --color-black: #111;
@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: var(--color-white);
   color: var(--color-black);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -24,6 +24,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.02em;
   line-height: 1.5;
 }
 

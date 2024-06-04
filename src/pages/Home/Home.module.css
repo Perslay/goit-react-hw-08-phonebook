@@ -1,26 +1,35 @@
 .container {
   background-color: var(--color-white);
   margin: 0 auto;
-  padding: 5rem 1rem 2rem;
+  padding: 13rem 1rem 2rem;
   width: 300px;
+  min-height: 100vh;
 }
 
 .heading {
   color: var(--color-accent);
-  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 4rem 2rem;
+    padding: 11rem 2rem 3rem;
     width: 600px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .container {
-    padding: 6rem 3rem;
+    font-size: 18px;
+    padding: 13rem 3rem 4rem;
     width: 900px;
   }
 }
