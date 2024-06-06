@@ -20,6 +20,7 @@
 
 @media screen and (min-width: 1024px) {
   .container {
+    font-size: 18px;
     padding: 1.5rem 3rem;
     width: 900px;
   }
