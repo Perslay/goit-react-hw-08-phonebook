@@ -26,55 +26,36 @@ export const App = () => {
   // const isLoading = useSelector(selectIsLoading);
   // const error = useSelector(selectError);
 
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch]);
-
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);
 
-  return (
-    // <div>
-    //   {isLoading && !error && <Loader />}
-    //   <div className={css.appContainer}>
-    //     <h1 className={css.firstHeading}>Phonebook</h1>
-    //     <ContactForm />
-    //     <h2 className={css.secondHeading}>Contacts</h2>
-    //     <Filter />
-    //     <ContactList error={error} />
-    //   </div>
-    // </div>
-    isRefreshing ? (
-      <p>Refreshing user...</p>
-    ) : (
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route
-            path="register"
-            element={
-              <RestrictedRoute
-                redirectTo="/contacts"
-                component={<Register />}
-              />
-            }
-          />
-          <Route
-            path="login"
-            element={
-              <RestrictedRoute redirectTo="/contacts" component={<Login />} />
-            }
-          />
-          <Route
-            path="contacts"
-            element={
-              <PrivateRoute redirectTo="/login" component={<Contacts />} />
-            }
-          />
-        </Route>
-      </Routes>
-    )
+  return isRefreshing ? (
+    <p>Refreshing user...</p>
+  ) : (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route
+          path="register"
+          element={
+            <RestrictedRoute redirectTo="/contacts" component={<Register />} />
+          }
+        />
+        <Route
+          path="login"
+          element={
+            <RestrictedRoute redirectTo="/contacts" component={<Login />} />
+          }
+        />
+        <Route
+          path="contacts"
+          element={
+            <PrivateRoute redirectTo="/login" component={<Contacts />} />
+          }
+        />
+      </Route>
+    </Routes>
   );
 };
 

@@ -34,12 +34,16 @@
   text-align: center;
 }
 
-.input {
+.formField {
   border: none;
   border-radius: 20px;
   font-size: 14px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.input {
+  composes: formField;
   padding: 0.5rem 1rem;
   transition: box-shadow 200ms ease;
 }
@@ -51,12 +55,8 @@
 }
 
 .submit {
+  composes: formField;
   background-color: var(--color-white);
-  border: none;
-  border-radius: 20px;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   margin: 2rem auto 0;
   padding: 0.5rem;
   transition: background-color 200ms ease, color 200ms ease;
