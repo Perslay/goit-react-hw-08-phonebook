@@ -11,7 +11,7 @@ export const Contact = ({ contact }) => {
     <div className={css.itemContainer}>
       <div className={css.text}>
         <p className={css.paragraph}>{contact.name}</p>
-        <p className={css.paragraph}>{contact.phone}</p>
+        <p className={css.paragraph}>{contact.number}</p>
       </div>
       <button
         className={css.button}

@@ -4,26 +4,6 @@
   width: 300px;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 11rem 2rem 2rem;
-    width: 600px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    padding: 13rem 3rem 2rem;
-    width: 900px;
-  }
-}
-
-.container {
-  margin: 0 auto;
-  padding: 13rem 1rem 2rem;
-  width: 300px;
-}
-
 .smallContainer {
   background-color: var(--color-background);
   border-radius: 10px;
@@ -31,6 +11,7 @@
 }
 
 .heading {
+  color: var(--color-accent);
   letter-spacing: 0.03em;
   margin-bottom: 2rem;
   text-align: center;
@@ -64,7 +45,7 @@
   background-color: var(--color-white);
   border: none;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   margin: 2rem auto 0;
   padding: 0.5rem;
@@ -103,6 +84,7 @@
   }
 
   .submit {
+    font-size: 16px;
     width: 30%;
   }
 }

@@ -1,8 +1,8 @@
 .list {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
   gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 .listItem {
@@ -15,8 +15,7 @@
 }
 
 .error {
-  color: red;
-  font-size: 18px;
+  color: var(--color-error);
   text-align: center;
 }
 

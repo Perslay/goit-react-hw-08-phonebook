@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 13rem 2rem 3rem;
+    padding: 13rem 2rem 2rem;
     width: 600px;
   }
 }
@@ -29,7 +29,7 @@
 @media screen and (min-width: 1024px) {
   .container {
     font-size: 18px;
-    padding: 16rem 3rem 4rem;
+    padding: 16rem 3rem 3rem;
     width: 900px;
   }
 }

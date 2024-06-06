@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 0.5rem;
   max-width: 280px;
+  padding: 0 1rem;
 }
 
 .welcome {
@@ -17,8 +18,10 @@
   border-radius: 20px;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  margin: 0 auto;
   padding: 0.5rem;
   transition: background-color 200ms ease, color 200ms ease;
+  width: 100px;
 }
 
 .button:focus,

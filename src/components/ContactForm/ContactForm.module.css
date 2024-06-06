@@ -1,77 +1,74 @@
 .form {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
   gap: 1.5rem;
-  margin-bottom: 4rem;
 }
 
-.formBox {
+.row {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
 .label {
-  display: block;
   text-align: center;
 }
 
 .input {
-  border: 2px solid var(--color-lightgray);
-  font-family: inherit;
-  font-size: inherit;
-  padding: 0.5rem;
-  transition: box-shadow 200ms ease, border-color 200ms ease;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  transition: box-shadow 200ms ease;
 }
 
 .input:focus,
 .input:hover {
-  outline: none;
   border-color: var(--color-accent);
-  box-shadow: 0 0 5px var(--color-accent);
+  box-shadow: 0 0 8px var(--color-accent);
+  outline: 1px solid var(--color-accent);
 }
 
-.button {
-  border: 3px outset var(--color-light);
-  font-family: inherit;
-  font-size: inherit;
-  margin: 0 auto;
+.submit {
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin: 2rem auto 0;
   padding: 0.5rem;
-  transition: box-shadow 200ms ease, border-color 200ms ease;
-  width: 180px;
+  transition: background-color 200ms ease, color 200ms ease;
+  width: 50%;
 }
 
-.button:hover,
-.button:focus {
-  border-color: var(--color-accent);
-  box-shadow: 0 0 5px var(--color-accent);
+.submit:hover,
+.submit:focus {
+  background-color: var(--color-accent);
+  color: white;
   outline: none;
-}
-
-.button:active {
-  border-style: inset;
-}
-
-@media screen and (min-width: 768px) {
-  .formBox {
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .label {
-    flex-basis: 20%;
-    text-align: left;
-  }
-
-  .input {
-    width: 80%;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .form {
     margin-bottom: 5rem;
+  }
+
+  .row {
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .input {
+    font-size: 16px;
+    width: 70%;
+  }
+
+  .submit {
+    font-size: 16px;
+    width: 30%;
   }
 }

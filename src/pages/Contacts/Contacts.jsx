@@ -11,7 +11,7 @@ const Contacts = () => {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   return (
-    <main>
+    <main className={css.container}>
       <Helmet>
         <title>Contacts</title>
         <meta
@@ -24,15 +24,19 @@ const Contacts = () => {
         />
       </Helmet>
       {isLoading && !error && <Loader />}
-      <div className={css.appContainer}>
-        <h1 className={css.firstHeading}>Phonebook</h1>
+      <div className={css.smallContainer}>
+        <h2 className={css.secondHeading}>Phonebook</h2>
         <ContactForm />
-        <h2 className={css.secondHeading}>Contacts</h2>
-        <Filter />
-        <ContactList error={error} />
       </div>
+      <div className={css.smallContainer}>
+        <h3 className={css.thirdHeading}>Contacts</h3>
+        <Filter />
+      </div>
+      <ContactList error={error} />
     </main>
   );
 };
 
 export default Contacts;
+
+// check loading, error and their styles

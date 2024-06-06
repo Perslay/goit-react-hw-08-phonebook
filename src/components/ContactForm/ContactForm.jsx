@@ -17,13 +17,13 @@ export const ContactForm = () => {
 
     const form = evt.currentTarget;
     const name = form[0].value;
-    const phone = form[1].value;
+    const number = form[1].value;
     const nameExists = contacts.some(contact => contact.name === name);
 
     if (nameExists) {
       alert(name + ' is already in contacts.');
     } else {
-      dispatch(addContact({ name, phone }));
+      dispatch(addContact({ name, number }));
     }
 
     form.reset();
@@ -31,7 +31,7 @@ export const ContactForm = () => {
 
   return (
     <form className={css.form} onSubmit={handleSubmit}>
-      <div className={css.formBox}>
+      <div className={css.row}>
         <label className={css.label} htmlFor={nameInputId}>
           Name
         </label>
@@ -45,7 +45,7 @@ export const ContactForm = () => {
           required
         />
       </div>
-      <div className={css.formBox}>
+      <div className={css.row}>
         <label className={css.label} htmlFor={numberInputId}>
           Number
         </label>
@@ -59,7 +59,7 @@ export const ContactForm = () => {
           required
         />
       </div>
-      <button className={css.button} type="submit">
+      <button className={css.submit} type="submit">
         Add contact
       </button>
     </form>
