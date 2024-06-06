@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  padding: 13rem 1rem 2rem;
+  padding: 15rem 1rem 2rem;
   width: 300px;
 }
 
@@ -24,6 +24,7 @@
 }
 
 .row {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -36,9 +37,17 @@
 .input {
   border: none;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   padding: 0.5rem 1rem;
+  transition: box-shadow 200ms ease;
+}
+
+.input:hover,
+.input:focus {
+  box-shadow: 0 0 8px var(--color-accent);
+  outline: 1px solid var(--color-accent);
 }
 
 .submit {
@@ -47,9 +56,18 @@
   border-radius: 20px;
   font-size: 14px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   margin: 2rem auto 0;
   padding: 0.5rem;
+  transition: background-color 200ms ease, color 200ms ease;
   width: 50%;
+}
+
+.submit:hover,
+.submit:focus {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,6 +98,7 @@
   }
 
   .input {
+    font-size: 16px;
     width: 70%;
   }
 

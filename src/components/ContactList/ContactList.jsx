@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import { selectVisibleContacts } from '../../redux/selectors';
 import { Contact } from '../Contact/Contact';
 import css from './ContactList.module.css';
@@ -20,4 +21,8 @@ export const ContactList = ({ error }) => {
       </ul>
     </div>
   );
+};
+
+ContactList.propTypes = {
+  error: PropTypes.string,
 };

@@ -1,7 +1,7 @@
 .container {
   background-color: var(--color-white);
   margin: 0 auto;
-  padding: 14rem 1rem 2rem;
+  padding: 15rem 1rem 2rem;
   width: 300px;
   min-height: 100vh;
 }

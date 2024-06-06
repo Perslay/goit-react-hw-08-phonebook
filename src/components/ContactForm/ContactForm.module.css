@@ -19,6 +19,7 @@
   border-radius: 20px;
   font-size: 14px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   padding: 0.5rem 1rem;
   transition: box-shadow 200ms ease;
 }

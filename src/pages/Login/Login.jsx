@@ -1,7 +1,23 @@
+import { useDispatch } from 'react-redux';
+import { logIn } from '../../redux/operations/auth';
 import { Helmet } from 'react-helmet-async';
 import css from './Login.module.css';
 
 const Login = () => {
+  const dispatch = useDispatch();
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    dispatch(
+      logIn({
+        email: form.elements.email.value,
+        password: form.elements.password.value,
+      })
+    );
+    form.reset();
+  };
+
   return (
     <main className={css.container}>
       <Helmet>
@@ -14,7 +30,7 @@ const Login = () => {
       </Helmet>
       <div className={css.smallContainer}>
         <h2 className={css.heading}>Log in</h2>
-        <form className={css.form}>
+        <form onSubmit={handleSubmit} className={css.form}>
           <div className={css.row}>
             <label className={css.label} htmlFor="login-email">
               Email
