@@ -1,4 +1,3 @@
-// import axios from 'axios';
 import axios from './axiosConfig.js';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
