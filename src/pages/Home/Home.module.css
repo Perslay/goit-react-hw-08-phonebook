@@ -1,9 +1,8 @@
 .container {
   background-color: var(--color-white);
   margin: 0 auto;
-  padding: 15rem 1rem 2rem;
+  padding: 2rem 1rem 12rem;
   width: 300px;
-  min-height: 100vh;
 }
 
 .heading {
@@ -21,7 +20,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 13rem 2rem 2rem;
+    padding: 2rem 2rem 10rem;
     width: 600px;
   }
 }
@@ -29,7 +28,7 @@
 @media screen and (min-width: 1024px) {
   .container {
     font-size: 18px;
-    padding: 16rem 3rem 3rem;
+    padding: 2rem 3rem 12rem;
     width: 900px;
   }
 }
