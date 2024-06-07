@@ -11,6 +11,24 @@
   width: 300px;
 }
 
+.address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  gap: 0.7rem;
+}
+
+.link {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 1rem 2rem;

@@ -32,6 +32,10 @@
     padding: 14rem 2rem 2rem;
     width: 600px;
   }
+
+  .smallContainer {
+    padding: 2.5rem 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -39,6 +43,10 @@
     font-size: 18px;
     padding: 17rem 3rem 3rem;
     width: 900px;
+  }
+
+  .smallContainer {
+    padding: 3rem 2rem;
   }
 
   .secondHeading {
