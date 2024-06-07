@@ -6,13 +6,6 @@
   justify-content: center;
 }
 
-/* .link {
-  color: var(--color-black);
-  padding: 0.5rem 1rem;
-  text-align: center;
-  text-decoration: none;
-} */
-
 .link:hover {
   color: var(--color-accent);
 }

@@ -1,6 +1,4 @@
-// import { NavLink } from 'react-router-dom';
 import { StyledLink } from '../../../components/App.styled';
-
 import { useAuth } from '../../../hooks/useAuth';
 import css from './Navigation.module.css';
 

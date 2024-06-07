@@ -7,10 +7,7 @@ import { Layout } from './Layout';
 import { useAuth } from '../hooks/useAuth';
 import { refreshUser } from '../redux/operations/auth';
 import { Loader } from './Loader/Loader';
-// import { ContactList } from './ContactList';
-// import { ContactForm } from './ContactForm';
-// import { Loader } from './Loader';
-// import { Filter } from './Filter';
+import { NotFound } from '../pages/NotFound/NotFound';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Register = lazy(() => import('../pages/Register/Register'));
@@ -20,8 +17,6 @@ const Contacts = lazy(() => import('../pages/Contacts/Contacts'));
 export const App = () => {
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
-  // const isLoading = useSelector(selectIsLoading);
-  // const error = useSelector(selectError);
 
   useEffect(() => {
     dispatch(refreshUser());
@@ -57,6 +52,7 @@ export const App = () => {
               }
             />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       )}
     </div>

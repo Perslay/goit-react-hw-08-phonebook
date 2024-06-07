@@ -28,7 +28,6 @@
 .button:focus,
 .button:hover {
   background-color: var(--color-accent);
-  /* box-shadow: 0 0 10px var(--color-accent); */
   color: var(--color-white);
   outline: none;
 }
